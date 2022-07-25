@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+.header {
+    color: #f6c344;
+    font-size: 800%;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+
+    font-family: Noto, serif;
+
+    /*text-shadow: 2px 2px black;*/
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+    -webkit-background-clip: text;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header:hover {
+    letter-spacing: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Bounce In */
+/* Cite: https://ianlunn.github.io/Hover/ */
+.hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*.nav-home {*/
+/*    background-color: #f6c344;*/
+/*}*/

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Header } from "./component/Header";
+import { SearchPanel } from "./component/SearchPanel";
+import { MovieBoard } from "./component/MovieBoard";
+import { AppProvider } from "./context/MovieContext";
+import { Navbar } from "./component/Navbar";
+import {Spinner} from "react-rainbow-components";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <AppProvider>
+        <div className="container">
+          <Navbar />
+            <Header />
+          <SearchPanel />
+            <MovieBoard />
+        </div>
+      </AppProvider>
   );
 }
 
