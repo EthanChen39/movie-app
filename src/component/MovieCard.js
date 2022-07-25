@@ -16,7 +16,7 @@ export const MovieCard = (props) => {
     const imageStyles = {
         borderTopLeftRadius: '0.875rem',
         borderTopRightRadius: '0.875rem',
-        height: 350,
+        height: 380,
         width: '100%',
         backgroundImage: `url(https://image.tmdb.org/t/p/w500/${poster_path})`,
         backgroundSize: 'cover',
