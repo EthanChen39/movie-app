@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Rating } from 'react-rainbow-components';
 
 
+
 const cardStyles = {
     width: 260,
 };
@@ -25,7 +26,7 @@ export const MovieCard = (props) => {
     return (
         <div className="col-3">
         <div className="rainbow-p-bottom_xx-large mt-lg-5">
-            <a onClick={() => alert(original_title)}>
+
                 <Card
                     style={cardStyles}
                     className="hvr-bounce-in"
@@ -42,7 +43,7 @@ export const MovieCard = (props) => {
                 >
                     <div style={imageStyles} />
                 </Card>
-            </a>
+
         </div>
         </div>
     );

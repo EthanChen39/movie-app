@@ -1,7 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { MovieCard } from "./MovieCard";
 import { Spinner } from 'react-rainbow-components';
 import { AppContext } from "../context/MovieContext";
+import { Link } from "react-router-dom";
 
 export const MovieBoard = () => {
     const { data, isLoading, setData, setIsLoading, currentQuery, setCurrentQuery } = useContext(AppContext);
@@ -32,8 +33,11 @@ export const MovieBoard = () => {
         <>
             <div className="row">
                 {isLoading ? <Spinner size="large" className="mt-lg-5" /> : (
-                    results.map( movieInfo => <MovieCard className="col" key={movieInfo.id} info={movieInfo} />)
-                ) }
+                    results.map( movieInfo => (
+                        <Link className="col" to="../MoviePage" state={{ mid: movieInfo.id }}>
+                            <MovieCard key={movieInfo.id} info={movieInfo} />
+                        </Link>
+                    )))}
             </div>
 
             <div className="d-flex justify-content-center">

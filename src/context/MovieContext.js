@@ -1,15 +1,6 @@
-import React, { createContext, useReducer, useState, useEffect } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 import axios from "axios";
 
-
-export const AppReducer = (state, action) => {
-    switch (action.type) {
-        case 'RELOAD_BOARD':
-            return {
-                ...state,
-            };
-    }
-};
 
 export const AppContext = createContext();
 

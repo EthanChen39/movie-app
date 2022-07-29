@@ -5,7 +5,6 @@ import { SearchPanel } from "./component/SearchPanel";
 import { MovieBoard } from "./component/MovieBoard";
 import { AppProvider } from "./context/MovieContext";
 import { Navbar } from "./component/Navbar";
-import {Spinner} from "react-rainbow-components";
 
 function App() {
 

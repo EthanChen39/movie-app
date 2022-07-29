@@ -38,6 +38,18 @@
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
-/*.nav-home {*/
-/*    background-color: #f6c344;*/
-/*}*/
+.top-section {
+    background-color: #2b2b2b;
+    display: block;
+    overflow: auto;
+    height: 450px;
+}
+
+.backdrop {
+    max-height: 200px;
+    width: auto;
+}
+
+.movie-title {
+    color: #f6c344;
+}
